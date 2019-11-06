@@ -23,7 +23,7 @@ namespace McMaster.Extensions.CommandLineUtils
     /// Describes a set of command line arguments, options, and execution behavior.
     /// <see cref="CommandLineApplication"/> can be nested to support subcommands.
     /// </summary>
-    public partial class CommandLineApplication : IServiceProvider, IDisposable
+    public partial class CommandLineApplication : ICommandLineApplication
     {
         private const int HelpExitCode = 0;
         internal const int ValidationErrorExitCode = 1;
