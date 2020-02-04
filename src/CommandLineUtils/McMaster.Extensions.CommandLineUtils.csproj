@@ -23,7 +23,6 @@ McMaster.Extensions.CommandLineUtils.ArgumentEscaper
  A community-maintained fork of Microsoft.Extensions.CommandLineUtils, plus many enhancements.
     </PackageDescription>
     <PackageTags>commandline;parsing</PackageTags>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>McMaster.Extensions.CommandLineUtils.DoctorJonesFork</PackageId>
   </PropertyGroup>
 
