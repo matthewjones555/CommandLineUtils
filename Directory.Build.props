@@ -46,16 +46,16 @@
   </PropertyGroup>
 
    <PropertyGroup>
-    <VersionPrefix>2.5.0</VersionPrefix>
-    <VersionSuffix>rc</VersionSuffix>
+    <!-- <VersionPrefix></VersionPrefix> -->
+    <!-- <VersionSuffix></VersionSuffix> -->
     <IncludePreReleaseLabelInPackageVersion Condition="'$(IsStableBuild)' != 'true'">true</IncludePreReleaseLabelInPackageVersion>
-    <BuildNumber Condition=" '$(BuildNumber)' == '' ">$(BUILD_NUMBER)</BuildNumber>
-    <BuildNumber Condition=" '$(BuildNumber)' == '' ">0</BuildNumber>
-    <VersionSuffix Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix).$(BuildNumber)</VersionSuffix>
+    <!-- <BuildNumber Condition=" '$(BuildNumber)' == '' ">$(BUILD_NUMBER)</BuildNumber> -->
+    <!-- <BuildNumber Condition=" '$(BuildNumber)' == '' ">0</BuildNumber> -->
+    <!-- <VersionSuffix Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix).$(BuildNumber)</VersionSuffix> -->
     <RepositoryCommit Condition="'$(RepositoryCommit)' == ''">$(BUILD_SOURCEVERSION)</RepositoryCommit>
-    <PackageVersion>$(VersionPrefix)</PackageVersion>
-    <PackageVersion Condition="'$(IncludePreReleaseLabelInPackageVersion)' == 'true'">$(PackageVersion)-$(VersionSuffix)</PackageVersion>
-    <InformationalVersion Condition="'$(RepositoryCommit)' != ''">$(PackageVersion)+$(RepositoryCommit)</InformationalVersion>
+    <!-- <PackageVersion>$(VersionPrefix)</PackageVersion> -->
+    <!-- <PackageVersion Condition="'$(IncludePreReleaseLabelInPackageVersion)' == 'true'">$(PackageVersion)-$(VersionSuffix)</PackageVersion> -->
+    <InformationalVersion Condition="'$(RepositoryCommit)' != ''">$(RepositoryCommit)</InformationalVersion>
   </PropertyGroup>
 
   <ItemGroup>

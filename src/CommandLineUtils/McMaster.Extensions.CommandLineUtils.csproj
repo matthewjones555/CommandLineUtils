@@ -9,7 +9,7 @@
     <DisablePublicApiAnalyzer Condition="'$(TargetFramework)' == 'netstandard1.6'">true</DisablePublicApiAnalyzer>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsPackable>true</IsPackable>
-    <Description>Command-line parsing API.</Description>
+    <Description>A fork of the Command-line parsing API.</Description>
     <PackageDescription>Command-line parsing API and utilities for console applications.
 
 Commonly used types:
@@ -23,6 +23,7 @@ McMaster.Extensions.CommandLineUtils.ArgumentEscaper
  A community-maintained fork of Microsoft.Extensions.CommandLineUtils, plus many enhancements.
     </PackageDescription>
     <PackageTags>commandline;parsing</PackageTags>
+    <PackageId>McMaster.Extensions.CommandLineUtils.DoctorJonesFork</PackageId>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">

@@ -1,0 +1,16 @@
+next-version: 0.1.1
+mode: ContinuousDeployment 
+branches:
+  develop:
+    regex: dev(elop)?(ment)?$
+    increment: Patch
+    tag: beta
+  feature:
+    regex: features?[/-]
+    increment: Patch
+    tag: alpha-{BranchName}
+  master:
+    tag: rc
+    increment: Patch
+ignore:
+  sha: [1]

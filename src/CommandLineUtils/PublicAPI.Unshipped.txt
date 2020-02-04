@@ -1,0 +1,88 @@
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.AddName(string name) -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.AddSubcommand(McMaster.Extensions.CommandLineUtils.CommandLineApplication subcommand) -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.AllowArgumentSeparator.get -> bool
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.AllowArgumentSeparator.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Argument(string name, string description, System.Action<McMaster.Extensions.CommandLineUtils.CommandArgument> configuration, bool multipleValues = false) -> McMaster.Extensions.CommandLineUtils.CommandArgument
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Argument(string name, string description, bool multipleValues = false) -> McMaster.Extensions.CommandLineUtils.CommandArgument
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Argument<T>(string name, string description, System.Action<McMaster.Extensions.CommandLineUtils.CommandArgument> configuration, bool multipleValues = false) -> McMaster.Extensions.CommandLineUtils.CommandArgument<T>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Arguments.get -> System.Collections.Generic.List<McMaster.Extensions.CommandLineUtils.CommandArgument>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ClusterOptions.get -> bool
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ClusterOptions.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Command(string name, System.Action<McMaster.Extensions.CommandLineUtils.CommandLineApplication> configuration, bool throwOnUnexpectedArg = true) -> McMaster.Extensions.CommandLineUtils.CommandLineApplication
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Command<TModel>(string name, System.Action<McMaster.Extensions.CommandLineUtils.CommandLineApplication<TModel>> configuration, bool throwOnUnexpectedArg = true) -> McMaster.Extensions.CommandLineUtils.CommandLineApplication<TModel>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Commands.get -> System.Collections.Generic.List<McMaster.Extensions.CommandLineUtils.CommandLineApplication>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Conventions.get -> McMaster.Extensions.CommandLineUtils.Conventions.IConventionBuilder
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Description.get -> string
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Description.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Error.get -> System.IO.TextWriter
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Error.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Execute(params string[] args) -> int
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ExecuteAsync(string[] args, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<int>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ExtendedHelpText.get -> string
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ExtendedHelpText.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.FullName.get -> string
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.FullName.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.GetFullNameAndVersion() -> string
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.GetHelpText() -> string
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.GetHelpText(string commandName = null) -> string
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.GetOptions() -> System.Collections.Generic.IEnumerable<McMaster.Extensions.CommandLineUtils.CommandOption>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.GetValidationResult() -> System.ComponentModel.DataAnnotations.ValidationResult
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.GetVersionText() -> string
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.HelpOption(string template) -> McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.HelpOption(string template, bool inherited) -> McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.HelpTextGenerator.get -> McMaster.Extensions.CommandLineUtils.HelpText.IHelpTextGenerator
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.HelpTextGenerator.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Invoke.get -> System.Func<int>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Invoke.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.IsShowingInformation.get -> bool
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.LongVersionGetter.get -> System.Func<string>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.LongVersionGetter.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.MakeSuggestionsInErrorMessage.get -> bool
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.MakeSuggestionsInErrorMessage.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Name.get -> string
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Name.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Names.get -> System.Collections.Generic.IEnumerable<string>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.OnExecute(System.Func<System.Threading.Tasks.Task<int>> invoke) -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.OnExecute(System.Func<int> invoke) -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.OnExecuteAsync(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task<int>> invoke) -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.OnParsingComplete(System.Action<McMaster.Extensions.CommandLineUtils.Abstractions.ParseResult> action) -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Option(string template, string description, McMaster.Extensions.CommandLineUtils.CommandOptionType optionType) -> McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Option(string template, string description, McMaster.Extensions.CommandLineUtils.CommandOptionType optionType, System.Action<McMaster.Extensions.CommandLineUtils.CommandOption> configuration) -> McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Option(string template, string description, McMaster.Extensions.CommandLineUtils.CommandOptionType optionType, System.Action<McMaster.Extensions.CommandLineUtils.CommandOption> configuration, bool inherited) -> McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Option(string template, string description, McMaster.Extensions.CommandLineUtils.CommandOptionType optionType, bool inherited) -> McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Option<T>(string template, string description, McMaster.Extensions.CommandLineUtils.CommandOptionType optionType, System.Action<McMaster.Extensions.CommandLineUtils.CommandOption> configuration, bool inherited) -> McMaster.Extensions.CommandLineUtils.CommandOption<T>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.OptionHelp.get -> McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.OptionVersion.get -> McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Options.get -> System.Collections.Generic.List<McMaster.Extensions.CommandLineUtils.CommandOption>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.OptionsComparison.get -> System.StringComparison
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.OptionsComparison.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Out.get -> System.IO.TextWriter
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Out.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Parent.get -> McMaster.Extensions.CommandLineUtils.CommandLineApplication
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Parent.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Parse(params string[] args) -> McMaster.Extensions.CommandLineUtils.Abstractions.ParseResult
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.RemainingArguments.get -> System.Collections.Generic.List<string>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ResponseFileHandling.get -> McMaster.Extensions.CommandLineUtils.ResponseFileHandling
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ResponseFileHandling.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ShortVersionGetter.get -> System.Func<string>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ShortVersionGetter.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ShowHelp() -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ShowHelp(bool usePager) -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ShowHelp(string commandName = null) -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ShowHint() -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ShowInHelpText.get -> bool
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ShowInHelpText.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ShowRootCommandFullNameAndVersion() -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ShowVersion() -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ThrowOnUnexpectedArgument.get -> bool
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ThrowOnUnexpectedArgument.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.UsePagerForHelpText.get -> bool
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.UsePagerForHelpText.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ValidationErrorHandler.get -> System.Func<System.ComponentModel.DataAnnotations.ValidationResult, int>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ValidationErrorHandler.set -> void
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.Validators.get -> System.Collections.Generic.ICollection<McMaster.Extensions.CommandLineUtils.Validation.ICommandValidator>
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.ValueParsers.get -> McMaster.Extensions.CommandLineUtils.Abstractions.ValueParserProvider
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.VersionOption(string template, System.Func<string> shortFormVersionGetter, System.Func<string> longFormVersionGetter = null) -> McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.VersionOption(string template, string shortFormVersion, string longFormVersion = null) -> McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.ICommandLineApplication.WorkingDirectory.get -> string
